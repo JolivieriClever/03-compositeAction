@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: actions/checkout@v3
-      - id: foo
+      - name: Hello world action step
+        id: foo
         uses: JolivieriClever/03-compositeAction@v1
         with:
           who-to-greet: 'Pepe Le Pu'
